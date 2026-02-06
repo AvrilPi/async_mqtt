@@ -102,6 +102,8 @@ endif()
 set(CMAKE_VERIFY_INTERFACE_HEADER_SETS ON)
 add_subdirectory(include)
 
+include_directories(asio2exec)
+
 if(ASYNC_MQTT_BUILD_MRDOCS)
     message(STATUS "MrDocs generation")
     set(CMAKE_SYSROOT /usr)
